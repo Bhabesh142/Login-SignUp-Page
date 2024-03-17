@@ -1,0 +1,75 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url('/login.jpg');
+    background-size: cover;
+}
+
+.box
+{
+    width: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(196, 159, 159, 0.7);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.box h1
+{
+    color: rgb(212, 50, 50);
+    text-transform:capitalize;
+    font-weight: 700;
+}
+
+.box input[type="text"],.box input[type="password"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #0367fd;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25px;   
+}
+
+.box input[type="text"]:focus,.box input[type="password"]:focus
+{
+
+    transform: scale(1.2);
+    transition: transform 250ms ease-in-out;
+    border-color: #9be550ec;
+}
+
+.box input[type="submit"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #dbb63dec;
+    padding: 14px 35px;
+    width: 220px;
+    outline: none;
+    color: rgb(52, 56, 52);
+    border-radius: 24px;
+    transition: 0.25px;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover
+{
+    background: #ffc400ec;
+}
